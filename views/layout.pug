@@ -1,0 +1,44 @@
+doctype html(lang='en')
+head
+    title Blog
+    |   
+    meta(charset='utf-8')
+    |   
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    |      
+    link(rel='shortcut icon', href='./image/icon.png')
+    |   
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    |  
+    link(rel='stylesheet', href='./css/style.css')
+    |       
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    |   
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+body
+    .jumbotron 
+      .container
+        h1 Blog
+        p This is a blog
+    .container-fluid
+      .row.content
+        .col-sm-3.sidenav    
+          ul.nav.nav-pills.nav-stacked
+            li.active
+              a(href='/api') Blog list
+            |         
+            li
+              a(href='/api/addblog') Add blog
+            |         
+            li
+              a(href='/api/searchblog') Search blog
+            |
+            li
+              a(href='/api/logout') Logout
+            |
+            hr
+        |     
+        .col-sm-9
+          block content
+    footer.container-fluid
+      p © 2017 ABC Inc. All rights reserved.

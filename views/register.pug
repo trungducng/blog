@@ -1,0 +1,18 @@
+extends ./user
+block content
+      h2 Register
+      |   
+      form(method='post')
+        .form-group
+          |       
+          input.form-control(type='username', name='username', placeholder='Enter username')
+        |     
+        .form-group
+          |       
+          input.form-control(type='password', name='password', placeholder='Enter password')
+        |     
+        .form-group
+          |       
+          input.form-control(type='password', name='re_password', placeholder='Retype password')
+          |     
+        input(type='submit', class='btn btn-primary', name='register', value='Register')

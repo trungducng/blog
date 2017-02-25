@@ -1,0 +1,40 @@
+extends ./layout
+block content
+    span.label.label-primary Add blog
+      .col-sm-12
+          form(method='post')
+            | Title:
+            br
+            |   
+            input.form-control(type='text', name='title', placeholder='Enter title here')  
+            | Author:
+            br
+            |   
+            input.form-control(type='text', name='author', placeholder='Enter name of author here')
+            |  
+            br
+            | Content:
+            br
+            |
+            textarea.form-control(name='content')  
+            | 
+            br  
+            | Type:
+            br
+            |   
+            select#sel2.form-control(name='type')
+              option(value='novel') Novel
+              |         
+              option(value='technology') Technology
+              |         
+              option(value='manga') Manga
+              |         
+              option(value='discussion') Discussion
+              |         
+              option(value='culture') Culture
+            br
+            br
+            |
+            input(type='submit', class='btn btn-primary', name='submit', value='Submit')
+
+

@@ -1,0 +1,27 @@
+extends ./layout
+block content
+  span.label.label-primary View blog
+  .col-sm-12
+      ul
+        each key in {blogs}
+            h4
+            |
+            hr
+            |
+            h1 #{key.title}
+            h5
+            span.glyphicon.glyphicon-time
+            | Author: #{key.author} , #{key.created}
+            |       
+            h5
+            span.label.label-danger #{key.type}
+            |
+            br
+            br
+            |       
+            p #{key.content}
+            |
+            a(href='/api/deleteblog/'+key.id) Delete
+            a(href='/api/editblog/'+key.id) Edit
+            |
+            br

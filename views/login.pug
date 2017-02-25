@@ -1,0 +1,20 @@
+extends ./user
+block content
+      h3(style='color: red') #{message}
+      h2 Login
+      |   
+      form(action='http://localhost/api/login' method='POST')
+        .form-group
+          |       
+          input#username.form-control(type='text', name='username', placeholder='Enter username')
+        |     
+        .form-group
+          |       
+          input#pwd.form-control(type='password', name='password', placeholder='Enter password')
+        |     
+        .checkbox
+          label
+            input(type='checkbox', name='remember_me' value='yes')
+            |  Remember me
+        |     
+        input(type='submit', class='btn btn-primary', name='login', value='LOGIN')

@@ -1,0 +1,47 @@
+extends ./layout
+block content
+    span.label.label-primary Edit blog
+      .col-sm-12
+          form(action='http://localhost/editblog' method='post')
+            | Blog you want to edit:
+            br
+            | ID:
+            br
+            |
+            input.form-control(type='hidden', name='id', value=id)
+            |
+            | New title:
+            br
+            |   
+            input.form-control(type='text', name='title', placeholder='Enter new title here')
+            |   
+            br
+            br
+            |   
+            input.form-control(type='text', name='author', placeholder='Enter new author here')
+            |   
+            br
+            | New content:
+            br
+            |   
+            textarea.form-control(name='content')
+            | 
+            br  
+            | Type:
+            br
+            |   
+            select#sel2.form-control(name='type')
+              option(value='novel') Novel
+              |         
+              option(value='technology') Technology
+              |         
+              option(value='manga') Manga
+              |         
+              option(value='discussion') Discussion
+              |         
+              option(value='culture') Culture  
+            |   
+            br
+            br
+            |   
+            input(type='submit', class='btn btn-primary', name='submit', value='Submit')

@@ -1,0 +1,30 @@
+extends ./layout
+block content
+      span.label.label-primary Blog list
+      ul
+        each key in {blogs}
+          each item in key
+            h4
+            |
+            hr
+            |
+            small RECENT POSTS
+            a(href='/api/viewblog/'+item.id)
+              h1 #{item.title}
+            h5
+            span.glyphicon.glyphicon-time
+            | Author: #{item.author} , #{item.created}
+            |       
+            h5
+            span.label.label-danger #{item.type}
+            |
+            br
+            br
+            |       
+            p #{item.content}
+            |
+            a(href='/api/deleteblog/'+item.id) Delete
+            a(href='/api/editblog/'+item.id) Edit
+            |
+            br
+

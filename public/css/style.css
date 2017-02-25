@@ -1,0 +1,57 @@
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+      .row.content {height: 1500px}
+      /* Set gray background color and 100% height */
+      .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+      }
+      /* Set black background color, white text and some padding */
+      footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+      }
+      /* On small screens, set height to 'auto' for sidenav and grid */
+      @media screen and (max-width: 767px) {
+      .sidenav {
+      height: auto;
+      padding: 15px;
+      }
+      .row.content {height: auto;}
+      }
+
+      #custom-search-input{
+      padding: 3px;
+      border: solid 1px #E4E4E4;
+      border-radius: 6px;
+      background-color: #fff;
+      }
+
+      #custom-search-input input{
+      border: 0;
+      box-shadow: none;
+      }
+
+      #custom-search-input button{
+      margin: 2px 0 0 0;
+      background: none;
+      box-shadow: none;
+      border: 0;
+      color: #666666;
+      padding: 0 8px 0 10px;
+      border-left: solid 1px #ccc;
+      }
+
+      #custom-search-input button:hover{
+      border: 0;
+      box-shadow: none;
+      border-left: solid 1px #ccc;
+      }
+
+      #custom-search-input .glyphicon-search{
+      font-size: 23px;
+      }
+
+      a{
+            margin-right: 10px;
+      }
