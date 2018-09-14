@@ -1,6 +1,7 @@
 {
   "name": "blog-project",
-  "version": "1.0.0",
+  "author": "trungducng",
+  "version": "1.0.1",
   "description": "node project",
   "main": "index.js",
   "scripts": {
